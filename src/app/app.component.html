@@ -1,0 +1,11 @@
+<div>
+  <h3 class="title"> {{title}}</h3>
+  <input class="text-line" type="text" [(ngModel)]="queryString" id="search" placeholder="Search to type">
+
+
+    <div class="boxStyle" *ngFor="let n of names | FilterPipe: queryString">
+      {{n}}
+    </div>
+    
+
+</div>
